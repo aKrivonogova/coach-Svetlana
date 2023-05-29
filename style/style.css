@@ -12,6 +12,7 @@
     --font-size-large: 2.1875rem;
     --font-size-small: 1.5rem;
     --font-size-small-extra: 1.75rem;
+    --font-size-least: 1.4375rem;
     --font-family-title: 'Playfair Display';
     --font-family-subtitle: 'Open Sans';
     --font-weight-large: 700;
@@ -20,6 +21,7 @@
     --services-width: 1440px;
     --font-color: #000000;
     --services-container-width: 1080px;
+    --services-list-container-width: 401px;
 
 }
 
@@ -35,11 +37,26 @@
     font-weight: 600;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/static/OpenSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/static/OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
 
 .main-info-container {
     width: 100%;
-    background: var(--theme-gradient-accent);
-
+    background-image: url('../images/mainPhoto.jpg');
+    padding-bottom: 135px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 88px;
 }
 
 .nav-bar-container {
@@ -194,8 +211,70 @@
 }
 
 .sirvices-list-container {
-    display: flex;
-    flex-direction: column;
+    width: var(--services-list-container-width)
 }
 
- 
+.sirvices-list-container {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px 13px;
+}
+
+.sirvices-list-content {
+    width: 375px;
+    border: 2px solid #D6D6D6;
+    border-radius: 15px;
+}
+
+.sirvices-list-title {
+    font-family: var(--font-family-subtitle);
+    font-style: normal;
+    font-weight: var(--font-weight-large);
+    font-size: var(--font-size-least);
+    line-height: 31px;
+    text-align: var(--text-align);
+    color: var(--font-color);
+    max-width: 331px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 19px;
+    margin-bottom: 33px;
+}
+
+.sirvices-list {
+    list-style: none;
+    position: relative;
+    padding-left: 26px;
+}
+
+.sirvices-item {
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.sirvices-item:last-of-type {
+    margin-bottom: 41px;
+}
+
+
+.sirvices-item-text {
+    padding-right: 7px;
+    padding-left: 27px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 31px;
+
+    color: #000000;
+}
+
+.sirvices-item::before {
+    content: '';
+    width: 17px;
+    top: 6px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    background: #9DD3A8;
+}
