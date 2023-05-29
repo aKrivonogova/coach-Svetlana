@@ -110,7 +110,8 @@
     --button-border-width: 0.125rem;
 
     --bacground-button-variant-1: #4B7B62; 
-    --button-font-family: 'Open Suns'
+    --button-font-family: 'Open Suns';
+    --button-width: 300px;
 }
 
 
@@ -221,13 +222,13 @@ button {
     height: var(--button-height-small);
     line-height: calc(var(--button-height-small) - (var(--button-border-width) * 2));
     border-radius: var(--button-border-radius);
-    padding: var(--button-padding-small);
+    /* padding: var(--button-padding-small); */
     font-size: var(--button-font-size);
     font-weight: var(--button-font-weight);
     border-width: var(--button-border-width);
     border-style: solid;
     font-family: var(--button-font-family);
-}
+ }
 
 .button.large,
 button.large {
