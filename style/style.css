@@ -1,0 +1,132 @@
+:root {
+    --nav-content-width: 1030px;
+    --main-info-content-width: 1030px;
+    --nav-bar-width: 350px;
+    --nav-height: 75px;
+    --theme-gradient-accent: linear-gradient(90.33deg, #D1D1C7 24.67%, rgba(200, 200, 189, 0) 96.53%);
+    --about-couch-width: 588px;
+    --requests-content-width: 946px;
+    --request-item-width: 290px;
+    --border-radius: 15px;
+    --request-item-background: #FFFFFF;
+}
+
+.main-info-container {
+    width: 100%;
+    background: var(--theme-gradient-accent);
+    height: 100%;
+}
+
+.image {
+    width: 1266.19px;
+    height: 760px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+.nav-bar-container {
+    width: 100%;
+    height: var(--nav-height);
+    margin-bottom: 195px;
+}
+
+.nav-bar-content {
+    width: var(--nav-content-width);
+}
+
+.nav-bar {
+    width: var(--nav-bar-width);
+}
+
+.about-couch-container {
+    margin: 0 auto;
+    max-width: var(--main-info-content-width);
+    display: flex;
+}
+
+.couch-info {
+    max-width: var(--about-couch-width);
+}
+
+.requests {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.requests-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--requests-content-width);
+    list-style: none;
+    justify-content: center;
+}
+
+.requests-item {
+    width: var(--request-item-width);
+    margin-right: 38px;
+    background: var(--request-item-background);
+    border: 2px solid #D6D6D6;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    margin-bottom: 44px;
+}
+
+.requests-item img {
+    width: 117px;
+    height: 117px;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+
+
+.requests-item:nth-child(3),
+.requests-item:nth-child(5) {
+    margin-right: 0;
+}
+
+.requests-content {
+    background: #F9F9F9;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    width: 274px;
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.requests-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    max-width: 192px;
+    text-align: center;
+}
+
+.requests-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 100px;
+}
+
+ 
